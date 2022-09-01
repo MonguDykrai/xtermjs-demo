@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import Terminal from 'xterm';
-import 'xterm/lib/xterm.css';
+import { Terminal } from 'xterm';
+import 'xterm/css/xterm.css';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -30,6 +30,7 @@ term.writeln('This is a local terminal emulation, without a real terminal in the
 term.writeln('Type some keys and commands to play around.');
 term.writeln('');
 term.prompt();
+// 光标闪烁
 term.setOption('cursorBlink', true);
 
 var cmd = '';
