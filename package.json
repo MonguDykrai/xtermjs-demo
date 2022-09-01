@@ -1,13 +1,14 @@
 {
   "name": "simple-xterm-forked",
   "version": "0.0.0",
-  "description": null,
+  "description": "",
   "keywords": [],
   "main": "index.js",
   "dependencies": {
-    "xterm": "2.9.2",
+    "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react": "16.0.0"
+    "serve": "^13.0.2",
+    "xterm": "2.9.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.0"

@@ -39,14 +39,14 @@ term.on('key', function (key, ev) {
     !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
   );
 
-  if (ev.keyCode == 13) {
+  if (ev.keyCode === 13) {
     if(cmd === 'clear')
     {
       term.clear();
     }
     cmd = '';
     term.prompt();
-  } else if (ev.keyCode == 8) {
+  } else if (ev.keyCode === 8) {
     // Do not delete the prompt
     console.log(term.rows);
     if (term.x > 2) {
